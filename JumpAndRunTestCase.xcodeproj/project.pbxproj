@@ -15,6 +15,7 @@
 		2A8521EE24F57ED400521851 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8521EC24F57ED400521851 /* Main.storyboard */; };
 		2A8521F024F57ED700521851 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A8521EF24F57ED700521851 /* Assets.xcassets */; };
 		2A8521F324F57ED700521851 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8521F124F57ED700521851 /* LaunchScreen.storyboard */; };
+		2A8521FB24F5A4DF00521851 /* Cat.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A8521FA24F5A4DE00521851 /* Cat.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		2A8521EF24F57ED700521851 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A8521F224F57ED700521851 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A8521F424F57ED700521851 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A8521FA24F5A4DE00521851 /* Cat.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Cat.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			children = (
 				2A8521E224F57ED400521851 /* AppDelegate.swift */,
 				2A8521E424F57ED400521851 /* GameScene.sks */,
+				2A8521FA24F5A4DE00521851 /* Cat.sks */,
 				2A8521E624F57ED400521851 /* Actions.sks */,
 				2A8521E824F57ED400521851 /* GameScene.swift */,
 				2A8521EA24F57ED400521851 /* GameViewController.swift */,
@@ -131,6 +134,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A8521FB24F5A4DF00521851 /* Cat.sks in Resources */,
 				2A8521EE24F57ED400521851 /* Main.storyboard in Resources */,
 				2A8521E524F57ED400521851 /* GameScene.sks in Resources */,
 				2A8521F024F57ED700521851 /* Assets.xcassets in Resources */,
