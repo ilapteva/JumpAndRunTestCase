@@ -22,10 +22,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var buttonRestart: MSButtonNode!
     var ground1: SKNode!
     var ground2: SKNode!
-//    var backgroundMusic: SKAudioNode!
     
-    
-    let scrollSpeed: CGFloat = 40
+    var scrollSpeed: CGFloat = 90
     let fixedDelta: CFTimeInterval = 1.0 / 60.0
     var spawnTimer: CFTimeInterval = 0
     var gameState: GameSceneState = .active
@@ -71,6 +69,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 let newPosition = CGPoint(x: (self.size.width / 2) + ground.size.width, y: groundPosition.y)
                 ground.position = self.convert(newPosition, to: scrollLayer)
             }
+            scrollSpeed += 0.01
         }
     }
     
