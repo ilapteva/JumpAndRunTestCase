@@ -7,15 +7,26 @@
 //
 
 import UIKit
+import FacebookCore
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+         AppLinkUtility.fetchDeferredAppLink { (url, error) in
+                   if let error = error {
+                       print("Received error while fetching deferred app link %@", error)
+                   }
+                   if let url = url {
+                       if #available(iOS 10, *) {
+                           UIApplication.shared.open(url, options: [:], completionHandler: nil)
+                       } else {
+                           UIApplication.shared.openURL(url)
+                       }
+                   }
+               }
         return true
     }
 

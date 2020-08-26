@@ -25,7 +25,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
 //    var backgroundMusic: SKAudioNode!
     
     
-    let scrollSpeed: CGFloat = 100
+    let scrollSpeed: CGFloat = 40
     let fixedDelta: CFTimeInterval = 1.0 / 60.0
     var spawnTimer: CFTimeInterval = 0
     var gameState: GameSceneState = .active
@@ -35,7 +35,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scrollLayer = self.childNode(withName: "scrollLayer")
         obstacleSource = self.childNode(withName: "//obstacle")
         obstacleLayer = self.childNode(withName: "obstacleLayer")
-        buttonRestart = self.childNode(withName: "buttonRestart") as! MSButtonNode
+        buttonRestart = self.childNode(withName: "buttonRestart") as? MSButtonNode
         ground1 = self.childNode(withName: "ground")
         ground2 = self.childNode(withName: "ground2")
         cat.isPaused = false
@@ -84,6 +84,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         updateObstacles()
         spawnTimer += fixedDelta
         
+        
     }
     
     func updateObstacles() {
@@ -106,6 +107,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             newObstacle.position = self.convert(randomPosition, to: obstacleLayer)
             
             spawnTimer = 0
+            speed += 1
         }
         
     }
