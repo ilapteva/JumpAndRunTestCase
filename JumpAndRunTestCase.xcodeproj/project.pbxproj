@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		2A22214124F6919600A121F4 /* Obstacle.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A22214024F6919600A121F4 /* Obstacle.sks */; };
 		2A22214324F6A7A100A121F4 /* MSButtonNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A22214224F6A7A100A121F4 /* MSButtonNode.swift */; };
+		2A22214524F6BA0C00A121F4 /* bg.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A22214424F6BA0B00A121F4 /* bg.mp3 */; };
 		2A8521E324F57ED400521851 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8521E224F57ED400521851 /* AppDelegate.swift */; };
 		2A8521E524F57ED400521851 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A8521E424F57ED400521851 /* GameScene.sks */; };
 		2A8521E724F57ED400521851 /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = 2A8521E624F57ED400521851 /* Actions.sks */; };
@@ -23,6 +24,7 @@
 /* Begin PBXFileReference section */
 		2A22214024F6919600A121F4 /* Obstacle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Obstacle.sks; sourceTree = "<group>"; };
 		2A22214224F6A7A100A121F4 /* MSButtonNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSButtonNode.swift; sourceTree = "<group>"; };
+		2A22214424F6BA0B00A121F4 /* bg.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bg.mp3; sourceTree = SOURCE_ROOT; };
 		2A8521DF24F57ED400521851 /* JumpAndRunTestCase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JumpAndRunTestCase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A8521E224F57ED400521851 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A8521E424F57ED400521851 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				2A8521F124F57ED700521851 /* LaunchScreen.storyboard */,
 				2A8521F424F57ED700521851 /* Info.plist */,
 				2A22214224F6A7A100A121F4 /* MSButtonNode.swift */,
+				2A22214424F6BA0B00A121F4 /* bg.mp3 */,
 			);
 			path = JumpAndRunTestCase;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				2A8521E524F57ED400521851 /* GameScene.sks in Resources */,
 				2A8521F024F57ED700521851 /* Assets.xcassets in Resources */,
 				2A8521F324F57ED700521851 /* LaunchScreen.storyboard in Resources */,
+				2A22214524F6BA0C00A121F4 /* bg.mp3 in Resources */,
 				2A8521E724F57ED400521851 /* Actions.sks in Resources */,
 				2A22214124F6919600A121F4 /* Obstacle.sks in Resources */,
 			);

@@ -22,6 +22,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var buttonRestart: MSButtonNode!
     var ground1: SKNode!
     var ground2: SKNode!
+//    var backgroundMusic: SKAudioNode!
     
     
     let scrollSpeed: CGFloat = 100
@@ -49,6 +50,10 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         }
         
         buttonRestart.state = .MSButtonNodeStateHidden
+        
+        let backgroundSound = SKAudioNode(fileNamed: "bg.mp3")
+        self.addChild(backgroundSound)
+        backgroundSound.run(SKAction.play())
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -61,13 +66,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         scrollLayer.position.x -= scrollSpeed * CGFloat(fixedDelta)
         
         for ground in scrollLayer.children as! [SKSpriteNode] {
-            
             let groundPosition = scrollLayer.convert(ground.position, to: self)
-            
             if groundPosition.x <= -ground.size.width {
-                
                 let newPosition = CGPoint(x: (self.size.width / 2) + ground.size.width, y: groundPosition.y)
-                
                 ground.position = self.convert(newPosition, to: scrollLayer)
             }
         }
